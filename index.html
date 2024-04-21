@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Assignment</titel>
-        </head>
-    <body>
-         <P>Survey about waist management system responsible for taking care of gabbage of a particular quater</P> 
-        <form action="/submit_form" method="post">
-            <lable for="Days">Days</lable><br>
+	<head><title>Assignment</title></head>
+<body>
+         <P>We are out here for a very important project which is to manage the GABBAGE of this Quater.<br> 
+            This is a form to carry out a survey on the people's opinion about gabage management</P> 
+            <form action="/submit_form" method="post">
+                <lable>Are you interested in waist recycling</lable><br>
+                <select id="days" name="days"><br>
+                <label>
+                <option value="yes">yes</option>
+                <option value="No">No</option>
+                <option value="maybe">Maybe</option>
+                </label><br>
+                </select>
+            </form>
+            <form action="/submit_form" method="post">
+                <lable>Are interested in getting sensiticed on Gabbage management</lable><br>
+                <select id="days" name="days"><br>
+                <label>
+                <option value="yes">yes</option>
+                <option value="No">No</option>
+                <option value="maybe">Maybe</option>
+                </label><br>
+                </select>
+            </form>
+            
+            
+
+        <form>
+            <lable for="Days">On what day of the week would you be interested in waste management</lable><br>
             <select id="days" name="days">
             <label for="Monday">monday</label><br>
             <option value="tuesday">Tuesday</option>
@@ -17,14 +39,18 @@
             <option value="sunday">Sunday</option>
         </select>
         </form>
-        </form>
-        <form action="/submit_form" method="post">
+    
+        <form>
             <lable for="name">First name:</lable>
             <input type="text" id="name" name="name"><br>
             <lable for="name">Second name:</lable>
             <input type="text" id="name" name="name"><br>
             <lable for="dob">Date of Birth:</lable>
-            <input type="date" id="dob" name="dob">
+            <input type="date" id="dob" name="dob"><br>
+            <lable for="text">Occupation:</lable>
+            <input type="text" id="text" name="text"><br>
+            <lable for="opinion">Opinion</lable>
+            <textarea id="opinion" name="opinion" row="4" cols="50"></textarea><br>
 
             <input type="submit" value="submit">
 
